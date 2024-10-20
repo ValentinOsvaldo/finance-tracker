@@ -42,14 +42,14 @@ export const DashboardCharts = () => {
               color: 'hsl(var(--chart-2))',
             },
           }}
-          // className="mx-auto aspect-square max-h-[250px]"
+          // className="mx-auto aspect-square"
         >
           <PieChart>
             <Pie
               data={pieChart}
               dataKey="amount"
               nameKey="title"
-              innerRadius={100}
+              // innerRadius={100}
             />
             <ChartTooltip content={<ChartTooltipContent />} />
             <ChartLegend
